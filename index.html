@@ -1,0 +1,658 @@
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>JRN 315/JN8402: Investigative Reporting - FOI</title>
+		<meta name="description" content="A 2025 talk for a Toronto Metropolitan University investigative reporting class on freedom of information">
+		<meta name="author" content="Tom Cardoso">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="dist/plugin/highlight/monokai.css">
+    <script src="dist/plugin/highlight/highlight.js"></script>
+
+		<style>
+			.reveal h1 {
+				text-transform: none;
+				line-height: 1;
+			}
+			.reveal h2,
+			.reveal h3,
+			.reveal h4 {
+				text-transform: none;
+			}
+      .reveal h3 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.5em;
+      }
+			.reveal ul {
+				margin: 0;
+			}
+			.reveal li {
+				margin-bottom: 0.1em;
+			}
+			.reveal p {
+				margin: 0;
+				margin-bottom: 0.5em;
+			}
+			.reveal em {
+				/* opacity: 0.6; */
+			}
+      .reveal img {
+        /* max-height: 70vh; */
+      }
+			.reveal .font-small {
+				font-size: 0.8em;
+			}
+			.w30 {
+				width: 30%;
+				display: inline-block;
+			}
+			p.heading {
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+			p.small {
+				font-size: 0.5em;
+			}
+			p.color-request {
+				font-size: 0.9em;
+			}
+			.text-red {
+				color: #e41a1c;
+			}
+			.text-blue {
+				color: #377eb8;
+			}
+			.text-green {
+				color: #4daf4a;
+			}
+			.text-purple {
+				color: #984ea3;
+			}
+			span.highlight-sky {
+				display: inline;
+				padding: 0 0.2em;
+				background-color: rgba(137, 202, 211, 0.5);
+			}
+			span.highlight-burgundy {
+				display: inline;
+				padding: 0 0.2em;
+				background-color: rgba(133, 46, 87, 0.3);
+			}
+			.pull-left {
+				text-align: left;
+			}
+			.grid_2x2 {
+				height: 100%;
+				display: grid;
+				grid-template-columns: repeat(2, minmax(150px, 2fr));
+				grid-template-rows: repeat(2, minmax(150px, 2fr));
+			}
+			.grid-item_2x2 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin: 3px;
+			}
+      .example {
+        font-size: 0.9em;
+      }
+      .example p:first-of-type {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 0.9em;
+      }
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h1>FOI week @ JRN315/JN8402</h1>
+				</section>
+
+				<section>
+					<h2>About me</h2>
+					<img style="width: auto; height: 35vh; margin-top: 10px;" src="img/tom.jpg" />
+					<p>Tom Cardoso, investigative reporter<br />at The Globe and Mail (and FOI power user)</p>
+					<p><a href="mailto:tcardoso@globeandmail.com">tcardoso@globeandmail.com</a></p>
+				</section>
+
+        <section>
+          <p>Also: I spent the better part of two years investigating the FOI system, a reporting project called <a href="https://www.secretcanada.com">Secret Canada</a>.</p>
+        </section>
+
+        <!-- https://docs.google.com/document/d/1bIMzEU_HDTSv0LjtD_s6aFXSWSRjgR-UfD6B0ln5Wy8/edit?tab=t.0 -->
+
+        <section>
+          <p><strong>Today’s agenda</strong></p>
+          <ol>
+            <li><a href="#/part-1">Documents, documents, documents <em>(20 minutes)</em></a></li>
+            <li><a href="#/part-2">Freedom of information: An overview <em>(30 minutes)</em></a></li>
+            <li><a href="#/part-3">Filing your own FOIs <em>(30 minutes)</em></a></li>
+            <li><a href="#/part-4">Other places to mine for documents <em>(10 minutes)</em></a></li>
+            <li><a href="#/part-5">Individual exercise <em>(??? minutes)</em></a></li>
+          </ol>
+        </section>
+
+        <section>
+          <img class="r-stretch" src="img/bitly-talk.svg">
+          <p><a href="https://bit.ly/tmu-foi-2025">bit.ly/tmu-foi-2025</a></p>
+        </section>
+
+        <section id="part-1">
+          <h2>Documents, documents, documents</h2>
+        </section>
+
+        <section>
+          <p>What good are documents?<br />Or: Why not just human sources?</p>
+        </section>
+
+        <section>
+          <p>Documents are useful because they:</p>
+          <ul>
+            <li>Are usually attributed to someone.</li>
+            <li>Usually have specific dates, carry metadata, etc.</li>
+            <li>Are often contemporaneous to the events they’re capturing.</li>
+            <li>Give insight into a person or organization’s thinking.</li>
+            <li>Often point to new reporting avenues worth pursuing.</li>
+            <li>Are often more reliable than human sources.</li>
+          </ul>
+        </section>
+
+        <section>
+          <p><strong>The document state of mind:</strong></p>
+          <p><em>“Developing a document state of mind means constantly wondering what documents are out there and laying the groundwork to get them. Reporters who can start seeing the world this way empower themselves and open a whole new universe of possibilities.”</em></p>
+          <p style="font-size: 0.7em;">Note: If you’re curious to learn more, <a href="https://us.sagepub.com/sites/default/files/upm-binaries/104722_Ch1_257467.pdf">this chapter is useful</a>.</p>
+        </section>
+
+        <section>
+          <p>While reporting, always bear in mind: Most things are documented, to some extent.</p>
+        </section>
+
+        <section>
+          <ul class="r-fit-text">
+            <li>Government and regulatory documents (open or via FOI)</li>
+            <li>Securities filings for publicly-traded companies</li>
+            <li>Corporate filings (incorporation, directors, sometimes ownership)</li>
+            <li>Court filings (lawsuits, criminal cases, reviews, court-mandated orders like evictions, etc.)</li>
+            <li>Bankruptcy records</li>
+            <li>Political donations</li>
+            <li>Property records</li>
+            <li>Liens (outstanding debts on cars, homes, businesses, etc.)</li>
+            <li>Social media</li>
+            <li>Website registration information</li>
+            <li>Etc.</li>
+          </ul>
+        </section>
+
+        <section>
+          <p><strong>Q: Okay, but how do you find documents?</strong></p>
+          <p>A: You’re a document detective. You’ll need to think deductively and inductively.</p>
+        </section>
+
+        <section>
+          <p><strong>Deduction</strong></p>
+          <p>Starting with a <span class="highlight-sky">hypothesis</span> and testing it through <span class="highlight-burgundy">evidence</span>. Top-down.</p>
+        </section>
+
+        <section class="example">
+          <p>Example</p>
+          <p>You receive a tip that <span class="highlight-sky">a city councillor is accepting gifts in exchange for favourable zoning decisions</span>. To test that theory, you might first collect <span class="highlight-burgundy">all decisions that this councillor brought forward or voted on</span>. Then, you might ask: Which companies benefited from those decisions? Then, see if there are connections between the company and the councillor on <span class="highlight-burgundy">Facebook, LinkedIn, etc.</span> You could also <span class="highlight-burgundy">FOI the councillor’s itinerary, their email correspondence (using the company names as keywords, etc.)</span>.</p>
+        </section>
+
+        <section>
+          <p><strong>Induction</strong></p>
+          <p>Starting with <span class="highlight-burgundy">observations</span> and arriving at a <span class="highlight-sky">hypothesis</span>. Bottom-up.</p>
+        </section>
+
+        <section class="example">
+          <p>Example</p>
+          <p>For fun, you have been using a browser extension to scrape <a href="https://gtaupdate.com/">GTA Update</a>, a website that <span class="highlight-burgundy">lists police and fire calls for service</span>. While analyzing the data, you notice several calls in recent months to a downtown construction site. <span class="highlight-sky">You wonder if they have a workplace safety problem</span>. You learn the <span class="highlight-burgundy">WSIB has a “safety check” service</span>, and find the company has a  <span class="highlight-burgundy">higher injury rate</span> than some other local companies of similar size. Next, you <span class="highlight-burgundy">interview current and former workers</span>, and find out <span class="highlight-burgundy">this began when the company was bought out two years ago</span> by a private equity firm, so you pull their <span class="highlight-burgundy">corporate filings</span>… And on it goes.</p>
+        </section>
+
+        <section>
+          <p>In practice, you won’t use just induction or deduction. You’ll use both and jump back and forth between them on any given story. A hypothesis begets records, which beget observations, which beget new hypotheses, etc.</p>
+        </section>
+
+        <section>
+          <p>You don’t need to know everything about what kinds of documents are out there to have a “document state of mind.” You just need to think about what information a person or organization is leaving behind.</p>
+          <p><strong>To that point, another useful technique:<br />The “circle of light.”</strong></p>
+        </section>
+
+        <section>
+          <img
+            class="r-stretch"
+            src="img/circle-of-light.png"
+            alt="Circle of light"
+          />
+        </section>
+
+        <section>
+          <p><em>Exercise:<br />Thinking deductively and inductively about document trails.</em></p>
+        </section>
+
+        <section>
+          <section class="example">
+            <p>Evictions</p>
+            <p>Given the national housing shortage, you <span class="highlight-sky">wonder if more people are getting evicted in Ontario than in past years</span>. After some quick searching, you learn the province doesn’t seem to track evictions.</p>
+            <p><strong>What next?</strong> 👇</p>
+          </section>
+          <section>
+            <p>Enter the Landlord and Tenant Board, a tribunal which processes housing dispute applications, including for evictions. <p><strong>What next?</strong> 👇</p>
+          </section>
+          <section>
+            <p><span class="highlight-sky">You theorize that they must somehow keep track of the applications they receive</span>. You ask for a <span class="highlight-burgundy">copy of their tracking system</span> in an Excel format. They send it to you! The data they sent doesn’t list specific addresses because of privacy concerns… but does have <span class="highlight-burgundy">postal codes</span>. <p><strong>What next?</strong> 👇</p>
+          </section>
+          <section>
+            <div class="r-stack r-stretch">
+              <img
+                class="fragment fade-out"
+                data-fragment-index="0"
+                src="img/evictions-1.jpg"
+                alt="Bar chart of evictions by postal code"
+              />
+              <img
+                class="fragment current-visible"
+                data-fragment-index="0"
+                src="img/evictions-2.jpg"
+                alt="Bar chart of evictions by postal code"
+              />
+            </div>
+          </section>
+          <section>
+            <p><span class="highlight-burgundy">You speak with a few experts who explain how the eviction process works</span>. To execute an eviction, you need to make a court application. <span class="highlight-sky">You hypothesize: Evictions must thus be court records. Which means they are public. Which means you can request them!</span></p>
+          </section>
+        </section>
+        <section>
+          <img
+            class="r-stretch"
+            src="img/eviction-factories.jpg"
+            alt="Spread from the Dec. 19, 2019 issue of The Globe and Mail, a story about evictions in Ontario"
+          />
+        </section>
+
+        <section id="part-2">
+          <h2>Freedom of information:<br />An overview</h2>
+        </section>
+
+        <section>
+          <h3>What is FOI?</h3>
+        </section>
+
+        <section>
+          <p>A legal mechanism that allows you to make official requests for records held by public bodies.</p>
+          <p>FOI exists for the sake of transparency, yes, but also out of operational necessity. Sometimes, you might need a government document for something in your own life. This is often the way to get it.</p>
+        </section>
+
+        <section>
+          <h3>Who’s filing requests?</h3>
+        </section>
+
+        <section>
+          <img
+            class="r-stretch"
+            src="img/requesters.png"
+            alt="Table of requesters"
+          />
+          <p>Federal access request stats (excluding IRCC), 2023-24</p>
+        </section>
+
+        <section>
+          <h3>Which bodies can you file to?</h3>
+        </section>
+
+        <section>
+          <ul>
+            <li>Government ministries and agencies</li>
+            <li>Crown corporations</li>
+            <li>Police forces</li>
+            <li>Health authorities</li>
+            <li>Universities</li>
+            <li>Hospitals</li>
+            <li>Transit systems</li>
+            <li>Securities commissions</li>
+            <li>And more!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>What kinds of records can you get?</h3>
+        </section>
+
+        <section>
+          <ul>
+            <li>Internal reports</li>
+            <li>Presentations</li>
+            <li>Contracts</li>
+            <li>Memos and briefing notes</li>
+            <li>Datasets and databases</li>
+            <li>Photos, videos, audio</li>
+            <li>Emails</li>
+            <li>Messages in Slack, Microsoft Teams, etc.</li>
+            <li>Text messages</li>
+            <li>Really, most kinds of “records”</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>What kinds of records <em>can’t</em> you get?</h3>
+        </section>
+
+        <section>
+          <ul>
+            <li>Court files</li>
+            <li>Police investigation files, unless they’re about you</li>
+            <li>Records that would reveal commercial secrets for the government or a company (e.g. drug pricing)</li>
+            <li>Records covered under cabinet confidentiality</li>
+            <li>Records covered under solicitor-client privilege</li>
+            <li>Records that are already sold in some form (e.g. corporate filings, property reports)</li>
+            <li>Patient health records, unless they’re about you</li>
+            <li>Personal information of other people</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Access law and FOI jurisdictions (Canada, provinces and territories, municipalities, U.S., etc.)</h3>
+        </section>
+
+        <section>
+          <p>Most countries have some kind of FOI/access law. Many have several!</p>
+          <p>This is the case in Canada. We have one set of laws per jurisdiction, meaning we have at least one law for each province and territory, plus the federal government. (Some jurisdictions, incl. Ontario, have two laws: One for provincial bodies, and one for municipal bodies.)</p>
+          <p>The feds split privacy and access into two laws.</p>
+        </section>
+
+        <section>
+          <p>For a breakdown, visit <a href="https://www.secretcanada.com/foi-guides-and-resources/foi-rules-canada-jurisdiction">this guide to Canada’s FOI jurisdictions</a>.</p>
+        </section>
+
+        <section>
+          <h3>How does the system work, generally-speaking?</h3>
+        </section>
+
+        <section>
+          <img
+            class="r-stretch"
+            src="img/request-process.png"
+            alt="List of steps in the FOI request process"
+          />
+        </section>
+
+        <section>
+          <h3>Cost</h3>
+        </section>
+
+        <section>
+          <p>This varies by jurisdiction. Many places charge a filing fee, often $5. Others charge nothing.</p>
+          <p>Most jurisdictions may charge additional processing fees before you receive your records.</p>
+          <p>Some jurisdictions waive fees for journalists, academics, etc. In practice, I find this is almost never worth it in Canada, as the waiver process can take months.</p>
+        </section>
+
+        <section>
+          <h3>Redactions</h3>
+        </section>
+
+        <section>
+          <ul>
+            <li>Redactions are supposed to be used sparingly and specifically.</li>
+            <li>Instead, they’re often painted with a wide brush.</li>
+            <li>There are many types of exemptions, too many to go over individually. You’ll become familiar with them as you file more requests.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Appeals</h3>
+        </section>
+
+        <section>
+          <ul>
+            <li>If you don’t agree with a redaction, time extension or other decision, you can appeal.</li>
+            <li>Every jurisdiction has an appeal mechanism.</li>
+            <li>Appeals are almost always free, except for in Ontario, which has a $25 filing fee.</li>
+            <li>Most jurisdictions have an information commissioner or ombudsman who can review decisions.</li>
+            <li>Some jurisdictions have a tribunal — an FOI court.</li>
+            <li>Appeals can take a long time. In Canada, they can easily take several months, if not years.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="r-fit-text">However… The system is broken.</h3>
+        </section>
+
+        <section>
+          <p>Aging legislation</p>
+          <img class="r-stretch" src="img/aging.png" />
+        </section>
+
+        <section>
+          <p>Response times aren’t what they should be</p>
+          <img class="r-stretch" src="img/response-times.png" />
+        </section>
+
+        <section>
+          <p>Everyone redacts at different rates</p>
+          <img class="r-stretch" src="img/over-redaction-1.png" />
+        </section>
+
+        <section>
+          <p>And the redactions are frequently unreasonable!</p>
+          <img class="r-stretch" src="img/over-redaction-2.png" />
+        </section>
+
+        <section>
+          <p>Commissioners are often disregarded</p>
+          <img class="r-stretch" src="img/commissioners.png" />
+        </section>
+
+        <section>
+          <p>And governments are interpreting FOI law “creatively”</p>
+          <img class="r-stretch" src="img/creative.png" />
+        </section>
+
+        <section>
+          <h3>Enter: Secret Canada</h3>
+        </section>
+
+        <section>
+          <p>Using FOI to investigate FOI.</p>
+          <p>
+            Secret Canada was an exhaustive examination of Canada’s broken FOI systems, and the
+            culmination of 18 months of investigative work. <strong>More than 1,000 FOIs, 200+
+              interviews and 100+ stories, blog posts and newsletters</strong>.
+          </p>
+        </section>
+
+        <section>
+          <p>A project in two parts:</p>
+          <ol>
+            <li>An investigation</li>
+            <li>A website</li>
+          </ol>
+        </section>
+
+        <section>
+          <p><strong>Investigation</strong></p>
+          <p>
+						Our reporting revealed that public institutions skirt FOI laws by overusing redactions,
+						failing to meet legislated timelines and claiming “no records” exist when they do.
+						And these institutions face few – if any – consequences for ignoring the precedents
+						set by courts and information commissioners.
+					</p>
+        </section>
+
+				<section>
+					<div class="r-stretch" style="display: flex; align-items: center; justify-content: center;">
+            <img src="img/sc-print-2.jpg" alt="Secret Canada investigation inner page" style="display: inline;text-align:center;" />
+						<img src="img/sc-print-1.jpg" alt="Secret Canada investigation front page" style="display: inline; text-align:center;" />
+					</div>
+				</section>
+
+				<section style="font-size: 0.8em;">
+					<p>Some of our stories have looked at:</p>
+					<ul>
+						<li><a href="https://www.theglobeandmail.com/canada/article-canada-freedom-of-information-laws/">Why FOI in Canada is broken, in a general sense</a></li>
+						<li><a href="https://www.theglobeandmail.com/canada/article-immigration-applications-access-requests/">How the federal ATI has been hijacked by the immigration system</a></li>
+						<li><a href="https://www.theglobeandmail.com/canada/article-newfoundland-foi-system/">Canada’s “island of transparency”: the province of Newfoundland</a></li>
+						<li><a href="https://www.theglobeandmail.com/canada/article-freedom-of-information-solutions/">How other countries’ FOI systems work</a></li>
+						<li><a href="https://www.theglobeandmail.com/canada/article-saskatchewan-freedom-of-information-power/">The toothlessness of watchdog bodies responsible for overseeing these laws</a></li>
+            <li><a href="https://www.theglobeandmail.com/canada/article-access-to-information-laws-historians/">The near-impossibility of accessing historical records via ATIP</a></li>
+            <li><a href="https://www.theglobeandmail.com/canada/article-secret-canada-public-officials-records-destroyed/">The lack of consequences for those breaking FOI laws</a></li>
+            <li><a href="https://www.theglobeandmail.com/canada/article-freedom-of-information-cities-audit/">The state of municipal FOI regimes</a></li>
+					</ul>
+				</section>
+
+        <section>
+          <p><strong>Website</strong> (<a href="https://secretcanada.com">secretcanada.com</a>)</p>
+          <img class="r-stretch" src="img/sc-web.png" />
+        </section>
+
+				<section>
+					<ul>
+						<li>A database of more than 400,000 completed FOI summaries for 600+ federal, provincial, territorial and municipal public bodies</li>
+						<li>Educational material, including detailed guides on filing FOIs, navigating the system and appealing decisions</li>
+						<li>A blog</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>
+						Our database was constructed from hundreds of FOIs, filed to every major public body in the country. Ministries, municipalities, police, hospitals, universities, Crown corporations… the list goes on. And we’re currently filing our next round!
+					</p>
+				</section>
+
+				<section>
+					<img class="r-stretch" src="img/tracker.png" alt="Screengrab of our Secret Canada FOI tracker" />
+				</section>
+
+				<section>
+					<img class="r-stretch" src="img/search.png" alt="Screengrab of Secret Canada's search page" />
+				</section>
+
+				<section>
+					<img class="r-stretch" src="img/request.png" alt="Screengrab of a Secret Canada completed FOI request" />
+				</section>
+
+				<section>
+					<img class="r-stretch" src="img/guides.png" alt="Screengrab of Secret Canada's guides page" />
+				</section>
+
+				<section>
+					<img class="r-stretch" src="img/letter-generator.png" alt="Screengrab of a Secret Canada letter generator" />
+				</section>
+
+				<section>
+					<img class="r-stretch" src="img/blog.png" alt="Screengrab of Secret Canada's FOI news page" />
+				</section>
+
+        <section>
+          <p>I spent <strong>a lot</strong> of time speaking with FOI experts across Canada. Several general trends jumped out:</p>
+        </section>
+
+        <section>
+          <ul>
+            <li>Public bodies have embraced a risk mitigation approach to FOI.</li>
+            <li>Access teams are under-resourced almost everywhere.</li>
+            <li>Many public bodies don’t give much thought to their duty to assist.</li>
+            <li>Redactions are supposed to be used sparingly and specifically. Instead, they’re painted with a wide brush.</li>
+            <li>The appeals system has been captured by lawyers and legal thinking. I recently received more than 700 pages of representations for an appeal in B.C. That’s crazy!</li>
+          </ul>
+        </section>
+
+        <section id="part-3">
+          <h2>Filing your own FOIs</h2>
+        </section>
+
+        <section>
+          <p>Research before you start, and know your material. Remember: Document state of mind!</p>
+        </section>
+
+        <section>
+          <p>The internal FOI process and what to expect</p>
+        </section>
+
+        <section>
+          <p>Writing your letter</p>
+        </section>
+
+        <section>
+          <p>Exercise: Let’s write an FOI letter together</p>
+        </section>
+
+        <section>
+          <p>Navigating the process once you’ve filed</p>
+        </section>
+
+        <section>
+          <p>The human touch</p>
+        </section>
+
+        <section>
+          <p>Always be filing (AKA “FOI Fridays”)</p>
+        </section>
+
+        <section>
+          <p>Staying organized</p>
+        </section>
+
+        <section>
+          <p>What about appeals? Provide appeal decision for additional reading, if of interest</p>
+        </section>
+
+        <section id="part-4">
+          <h2>Other places to mine for documents</h2>
+        </section>
+
+        <!-- Previously filed FOIs (Secret Canada, federal database, Open By Default)
+        Courts and the open court principle
+        Human sources!
+        Securities filings
+        Corporate registries -->
+
+        <section id="part-5">
+          <h2>Individual exercise</h2>
+        </section>
+
+        <section>
+          <p>We are each now going to write (and hopefully file) an access request. We’ll be filing to Newfoundland, since it’s free, pretty fast and you can do it online.</p>
+        </section>
+
+        <section>
+          <img class="r-stretch" src="img/bitly-nl.svg">
+          <p><a href="https://bit.ly/tmu-foi-2025-exercise">bit.ly/tmu-foi-2025-exercise</a></p>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				slideNumber: true,
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+        plugins: [ RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
